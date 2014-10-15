@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>jQuery UI</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="js/libs/jqueryui/css/jquery-ui.min.css"> 
+        <style>
+        </style>
+    </head>
+    <body>
+
+        <h1>通常のチェックボックス</h1>
+        <form>
+            <div class="normal-ui">
+                <label><input type="checkbox">春</label>
+                <label><input type="checkbox">夏</label>
+                <label><input type="checkbox">秋</label>
+                <label><input type="checkbox">冬</label>
+            </div>
+        </form>
+
+        <h1>jQuery UIのチェックボックス</h1>
+        <form>
+            <div id="jquery-ui">
+                <input type="checkbox" id="check1"><label for="check1">春</label>
+                <input type="checkbox" id="check2"><label for="check2">夏</label>
+                <input type="checkbox" id="check3"><label for="check3">秋</label>
+                <input type="checkbox" id="check4"><label for="check4">冬</label>
+            </div>
+        </form>
+
+        <script src="js/libs/jquery/jquery.min.js"></script>
+        <script src="js/libs/jqueryui/jquery-ui.min.js"></script>
+        <script>
+            $(function() {
+                $("#jquery-ui").buttonset();
+            });
+        </script>
+    </body>
+</html>
